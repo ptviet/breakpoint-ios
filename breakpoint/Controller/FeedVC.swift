@@ -1,7 +1,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class FeedVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()

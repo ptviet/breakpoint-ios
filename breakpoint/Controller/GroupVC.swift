@@ -1,7 +1,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class GroupVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()

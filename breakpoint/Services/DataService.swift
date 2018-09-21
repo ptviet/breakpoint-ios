@@ -22,4 +22,16 @@ class DataService {
     
   }
   
+  func uploadPost(withMessage massage: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+    
+    if groupKey != nil {
+      // Send to groups ref
+    } else {
+      // Pass into feed
+      REF_FEED.childByAutoId().updateChildValues(["content" : massage, "senderId": uid])
+      sendComplete(true)
+    }
+    
+  }
+  
 }
