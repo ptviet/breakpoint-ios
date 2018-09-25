@@ -21,6 +21,11 @@ class CreatePostVC: UIViewController {
     view.addGestureRecognizer(toggleKeyboard)
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    emailLbl.text = Auth.auth().currentUser?.email
+  }
+  
   @objc func handleToggleKeyboard() {
     view.endEditing(true)
   }
@@ -54,7 +59,10 @@ class CreatePostVC: UIViewController {
 extension CreatePostVC: UITextViewDelegate {
   
   func textViewDidBeginEditing(_ textView: UITextView) {
-    textView.text = ""
+    if textView.text == "Say something here..." {
+      textView.text = ""
+    }
+    
   }
   
 }

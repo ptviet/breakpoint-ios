@@ -14,12 +14,16 @@
 		4B45139A21536DDC006FAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B45139821536DDC006FAA01 /* Main.storyboard */; };
 		4B45139C21536DDE006FAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B45139B21536DDE006FAA01 /* Assets.xcassets */; };
 		4B45139F21536DDE006FAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B45139D21536DDE006FAA01 /* LaunchScreen.storyboard */; };
-		4B4513AC2153724A006FAA01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B4513AB2153724A006FAA01 /* GoogleService-Info.plist */; };
 		4B4513AE21537489006FAA01 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4513AD21537489006FAA01 /* DataService.swift */; };
 		4B4513B021537492006FAA01 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4513AF21537492006FAA01 /* AuthService.swift */; };
 		4BC2FACD2154B6E100F6554A /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2FACC2154B6E100F6554A /* MeVC.swift */; };
 		4BC2FACF2154B81F00F6554A /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2FACE2154B81F00F6554A /* CreatePostVC.swift */; };
 		4BC2FAD12154C12800F6554A /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2FAD02154C12800F6554A /* UIViewExt.swift */; };
+		4BE3A9A52158631000DF8F03 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3A9A42158631000DF8F03 /* FeedCell.swift */; };
+		4BE3A9A7215864E900DF8F03 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3A9A6215864E900DF8F03 /* Message.swift */; };
+		4BE3A9AD2158740F00DF8F03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BE3A9AC2158740F00DF8F03 /* GoogleService-Info.plist */; };
+		4BE3A9AF21588EE000DF8F03 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3A9AE21588EE000DF8F03 /* CreateGroupVC.swift */; };
+		4BE3A9B1215893B400DF8F03 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3A9B0215893B400DF8F03 /* UserCell.swift */; };
 		4BF5429A21548993000DCBFB /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5429921548993000DCBFB /* AuthVC.swift */; };
 		4BF5429C215489C5000DCBFB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5429B215489C5000DCBFB /* LoginVC.swift */; };
 		4BF5429E21548A1D000DCBFB /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5429D21548A1D000DCBFB /* InsetTextField.swift */; };
@@ -37,12 +41,16 @@
 		4B45139B21536DDE006FAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B45139E21536DDE006FAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B4513A021536DDE006FAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B4513AB2153724A006FAA01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B4513AD21537489006FAA01 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4B4513AF21537492006FAA01 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4BC2FACC2154B6E100F6554A /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		4BC2FACE2154B81F00F6554A /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		4BC2FAD02154C12800F6554A /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		4BE3A9A42158631000DF8F03 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		4BE3A9A6215864E900DF8F03 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4BE3A9AC2158740F00DF8F03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BE3A9AE21588EE000DF8F03 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		4BE3A9B0215893B400DF8F03 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4BF5429921548993000DCBFB /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		4BF5429B215489C5000DCBFB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4BF5429D21548A1D000DCBFB /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -110,7 +118,7 @@
 				4B45139B21536DDE006FAA01 /* Assets.xcassets */,
 				4B45139D21536DDE006FAA01 /* LaunchScreen.storyboard */,
 				4B4513A021536DDE006FAA01 /* Info.plist */,
-				4B4513AB2153724A006FAA01 /* GoogleService-Info.plist */,
+				4BE3A9AC2158740F00DF8F03 /* GoogleService-Info.plist */,
 			);
 			path = breakpoint;
 			sourceTree = "<group>";
@@ -124,6 +132,7 @@
 				4BF5429B215489C5000DCBFB /* LoginVC.swift */,
 				4BC2FACC2154B6E100F6554A /* MeVC.swift */,
 				4BC2FACE2154B81F00F6554A /* CreatePostVC.swift */,
+				4BE3A9AE21588EE000DF8F03 /* CreateGroupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,6 +142,8 @@
 			children = (
 				4BF5429D21548A1D000DCBFB /* InsetTextField.swift */,
 				4BF5429F21548EE2000DCBFB /* ShadowView.swift */,
+				4BE3A9A42158631000DF8F03 /* FeedCell.swift */,
+				4BE3A9B0215893B400DF8F03 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 		4B4513A8215370B8006FAA01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4BE3A9A6215864E900DF8F03 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B45139F21536DDE006FAA01 /* LaunchScreen.storyboard in Resources */,
-				4B4513AC2153724A006FAA01 /* GoogleService-Info.plist in Resources */,
+				4BE3A9AD2158740F00DF8F03 /* GoogleService-Info.plist in Resources */,
 				4B45139C21536DDE006FAA01 /* Assets.xcassets in Resources */,
 				4B45139A21536DDC006FAA01 /* Main.storyboard in Resources */,
 			);
@@ -281,17 +293,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC2FAD12154C12800F6554A /* UIViewExt.swift in Sources */,
+				4BE3A9A52158631000DF8F03 /* FeedCell.swift in Sources */,
 				4BC2FACD2154B6E100F6554A /* MeVC.swift in Sources */,
 				4BF542A021548EE2000DCBFB /* ShadowView.swift in Sources */,
 				4BF5429A21548993000DCBFB /* AuthVC.swift in Sources */,
 				4B45139721536DDC006FAA01 /* GroupVC.swift in Sources */,
 				4BF5429C215489C5000DCBFB /* LoginVC.swift in Sources */,
 				4BF5429E21548A1D000DCBFB /* InsetTextField.swift in Sources */,
+				4BE3A9B1215893B400DF8F03 /* UserCell.swift in Sources */,
+				4BE3A9AF21588EE000DF8F03 /* CreateGroupVC.swift in Sources */,
 				4B45139321536DDC006FAA01 /* AppDelegate.swift in Sources */,
 				4BC2FACF2154B81F00F6554A /* CreatePostVC.swift in Sources */,
 				4B4513B021537492006FAA01 /* AuthService.swift in Sources */,
 				4B45139521536DDC006FAA01 /* FeedVC.swift in Sources */,
 				4B4513AE21537489006FAA01 /* DataService.swift in Sources */,
+				4BE3A9A7215864E900DF8F03 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
