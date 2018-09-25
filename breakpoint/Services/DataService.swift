@@ -87,9 +87,42 @@ class DataService {
     }
   }
   
+  func getUserEmails(forGroup group: Group, completion: @escaping (_ emailArray: [String]) -> ()) {
+    REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+      guard let users = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+      var emailArray = [String]()
+      for user in users {
+        if group.members.contains(user.key) {
+          let email = user.childSnapshot(forPath: "email").value as! String
+          emailArray.append(email)
+        }
+      }
+      completion(emailArray)
+    }
+    
+  }
+  
   func createGroup(withTitle title: String, andDesc desc: String, forUserIds ids: [String], completion: @escaping (_ groupCreated: Bool) -> ()) {
     REF_GROUPS.childByAutoId().updateChildValues(["title" : title, "description": desc, "members": ids])
     completion(true)
   }
+  
+  func getAllGroups(completion: @escaping (_ groupArray: [Group]) -> ()) {
+    REF_GROUPS.observeSingleEvent(of: .value) { (groupSnapshot) in
+      guard let groups = groupSnapshot.children.allObjects as? [DataSnapshot] else { return }
+      var groupArray = [Group]()
+      for group in groups {
+        let memberArray = group.childSnapshot(forPath: "members").value as! [String]
+        if memberArray.contains((Auth.auth().currentUser?.uid)!) {
+          let title = group.childSnapshot(forPath: "title").value as? String
+          let description = group.childSnapshot(forPath: "description").value as? String
+          let groupObj = Group(key: group.key, title: title!, description: description!, members: memberArray)
+          groupArray.append(groupObj)
+        }
+      }
+      completion(groupArray)
+    }
+  }
+  
   
 }
